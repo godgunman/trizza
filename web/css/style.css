@@ -37,7 +37,6 @@ html, body, .container{
 }
 
 .app{
-	top:120px;
 	left:48%;
 	margin-left: -60px;
 	width: 200px;
@@ -57,6 +56,8 @@ html, body, .container{
 }
 
 .cloud.skrollable-after{
+	top: 50%;
+	margin-top: -200px;
 	bottom: auto;
 	position: fixed;
 	z-index: 99;
