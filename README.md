@@ -1,4 +1,4 @@
-trizza
+Trizza
 ======
 
-trizza is a appetizer.
+Trizza is an appetizer.
