@@ -3,9 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title><%= title %></title>
+
+        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
         <link rel="stylesheet" href="/stylesheets/index.css">
     </head>
     <body>
+        <section id="home" class="page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <header>
+                            <h1><%= title %></h1>
+                        </header>
+                    </div>
+
+                    <div class="col-md-6">
+                        <nav>
+                            <ul>
+                                <li><a><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="developer" class="scroll" data-700-start="left: 0px;" data-1000-start="left: 400px;">
+            <img src="/images/skrollr/developer.png">
+        </div>
 
         <script src="/javascripts/skrollr.min.js"></script>
         <script src="/javascripts/index.js"></script>

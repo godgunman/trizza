@@ -1,8 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: rgb(212, 212, 212);
+    font-family: "Droid Serif", Helvetica, Arial, Sans-Serif;
+
+    margin: 0px;
+    padding: 0px;
 }
 
-a {
-  color: #00B7FF;
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: "Droid Sans", Helvetica, Arial, Sans-Serif;
+    font-weight: bold;
+}
+
+.page {
+    display: block;
+
+    margin: 0px;
+    padding: 0px;
+
+    &:nth-child(1) {
+        background-color: rgb(255, 212, 0);
+        height: 600px;
+
+        .row {
+            border-bottom: 1px solid rgb(255, 233, 127);
+            padding: 15px 45px;
+
+            .col-md-6 {
+                height: 72px;
+            }
+        }
+
+        header {
+            h1 {
+                background-image: url('/images/icon.png');
+                background-position: center left;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                font-size: 48px;
+
+                padding-left: 1.2em;
+            }
+        }
+
+        nav {
+            font-family: "Droid Sans", Helvetica, Arial, Sans-Serif;
+            font-size: 18px;
+
+            text-align: right;
+
+            ul {
+                list-style-type: none;
+                padding-top: 40px;
+
+                li {
+                    display: inline-block;
+                    margin: 0px 10px;
+
+                    a {
+                        color: rgb(0, 0, 0);
+                        padding: 10px 15px;
+
+                        &:hover {
+                            background-color: rgb(255, 233, 127);
+                            border-radius: 20px;
+                            cursor: pointer;
+
+                            text-decoration: none;
+                            transition: background-color .5s;
+                            -webkit-transition: background-color .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.scroll {
+    position: fixed;
+
+    &#developer {
+        top: 240px;
+        margin-left: 100px;
+    }
 }

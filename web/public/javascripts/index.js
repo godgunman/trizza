@@ -1,1 +1,3 @@
-var s = skrollr.init();
+(function() {
+    var s = skrollr.init();
+})();
