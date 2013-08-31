@@ -70,8 +70,8 @@ h1, h2, h3, h4, h5, h6, h7 {
                             cursor: pointer;
 
                             text-decoration: none;
-                            transition: background-color .5s;
-                            -webkit-transition: background-color .5s;
+                            transition: background-color .4s;
+                            -webkit-transition: background-color .4s;
                         }
                     }
                 }
@@ -111,12 +111,21 @@ h1, h2, h3, h4, h5, h6, h7 {
 
     &#app {
         top: 410px; left: 360px; z-index: 4;
-        img { width: 64px; }
+        img { width: 128px; }
     }
 
     &#cloud {
         top: -300px; left: 450px; z-index: 2;
         img { width: 480px; }
+    }
+
+    &.star {
+        top: 320px; z-index: 5;
+        img { width: 96px; }
+
+        &#star-1 { left: 770px; }
+        &#star-2 { left: 780px; }
+        &#star-3 { left: 790px; }
     }
 
     &.user {

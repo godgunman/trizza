@@ -63,8 +63,8 @@ h7 {
   border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.5s;
-  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
 }
 .scroll {
   position: fixed;
@@ -98,7 +98,7 @@ h7 {
   z-index: 4;
 }
 .scroll#app img {
-  width: 64px;
+  width: 128px;
 }
 .scroll#cloud {
   top: -300px;
@@ -107,6 +107,22 @@ h7 {
 }
 .scroll#cloud img {
   width: 480px;
+}
+.scroll.star {
+  top: 320px;
+  z-index: 5;
+}
+.scroll.star img {
+  width: 96px;
+}
+.scroll.star#star-1 {
+  left: 770px;
+}
+.scroll.star#star-2 {
+  left: 780px;
+}
+.scroll.star#star-3 {
+  left: 790px;
 }
 .scroll.user {
   display: none;
