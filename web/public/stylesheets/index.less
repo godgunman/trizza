@@ -20,10 +20,45 @@ h1, h2, h3, h4, h5, h6, h7 {
     margin: 0px;
     padding: 0px;
 
-    &:nth-child(1) {
+    &#home {
         background-color: rgb(255, 212, 0);
         height: 640px;
+    }
 
+    &:nth-child(2) { height: 93000px; }
+    &:nth-child(3) {
+        background-color: rgb(25, 174, 255);
+        height: 800px;
+    }
+
+    &#end {
+        background-color: rgb(25, 174, 255);
+        height: 700px;
+
+        .row {
+            border-bottom: 1px solid rgb(139, 214, 255);
+        }
+
+        header {
+            h1 {
+                background-image: url('/images/icon-colored.png');
+            }
+        }
+
+        nav {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            background-color: rgb(139, 214, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.home {
         .row {
             border-bottom: 1px solid rgb(255, 233, 127);
             padding: 15px 45px;

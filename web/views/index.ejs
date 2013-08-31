@@ -8,26 +8,15 @@
         <link rel="stylesheet" href="/stylesheets/index.css">
     </head>
     <body>
-        <section id="home" class="page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <header>
-                            <h1><%= title %></h1>
-                        </header>
-                    </div>
+        <section id="home" class="page home">
+            <% include homepage %>
+        </section>
 
-                    <div class="col-md-6">
-                        <nav>
-                            <ul>
-                                <li><a><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                                <li><a>About</a></li>
-                                <li><a>Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+        <section class="page"></section>
+        <section class="page"></section>
+
+        <section id="end" class="page home">
+            <% include homepage %>
         </section>
 
         <div id="start" class="scroll"
@@ -45,8 +34,15 @@
             data-59000-start="left:2000px; display:block;"
             data-62000-start="left:720px;"
             data-74000-start="left:720px;"
-            data-77000-start="left:2000px;">
-            <img src="/images/skrollr/developer.png">
+            data-77000-start="left:2000px;"
+            data-92000-start="left:2000px;"
+            data-94000-start="left:100px;">
+            <img src="/images/skrollr/developer.png"
+                data-90000-start="display:inline;"
+                data-92000-start="display:none;">
+            <img src="/images/skrollr/happy-developer.png"
+                data-90000-start="display:none;"
+                data-92000-start="display:inline;">
         </div>
 
         <div id="app" class="scroll"
@@ -71,13 +67,17 @@
                 data-56000-start="display:none;">
             <img src="/images/skrollr/app-colored-3.png"
                 data-53000-start="display:none;"
-                data-56000-start="display:inline;">
+                data-56000-start="display:inline;"
+                data-90000-start="opacity:1;"
+                data-94000-start="opacity:0;">
         </div>
 
         <div id="cloud" class="scroll"
             data-0-start="top:-300px;"
             data-10-start="top:-240px;"
-            data-6000-start="top:200px;">
+            data-6000-start="top:200px;"
+            data-90000-start="transform:scale(1); display:block;"
+            data-94000-start="transform:scale(6); display:none;">
             <img src="/images/skrollr/cloud.png">
         </div>
 
