@@ -108,33 +108,52 @@ h7 {
 .scroll#cloud img {
   width: 480px;
 }
-.scroll#user-1 {
+.scroll.user {
+  display: none;
+}
+.scroll.user#user-1 {
   top: -100px;
   left: -100px;
   z-index: 1;
 }
-.scroll#user-2 {
+.scroll.user#user-2 {
   top: 240px;
-  left: -120px;
+  left: -160px;
   z-index: 3;
 }
-.scroll#user-3 {
+.scroll.user#user-3 {
   top: 640px;
   left: -100px;
   z-index: 3;
 }
-.scroll#user-4 {
+.scroll.user#user-4 {
   top: -200px;
   left: 900px;
   z-index: 1;
 }
-.scroll#user-5 {
+.scroll.user#user-5 {
   top: 320px;
   left: 1600px;
   z-index: 3;
 }
-.scroll#user-6 {
+.scroll.user#user-6 {
   top: 1000px;
   left: 960px;
   z-index: 3;
+}
+.scroll.dialog {
+  display: none;
+  z-index: 5;
+}
+.scroll.dialog#dialog-1 {
+  top: 180px;
+  left: 880px;
+}
+.scroll.dialog#dialog-2 {
+  top: 100px;
+  left: 520px;
+}
+.scroll.dialog#dialog-3 {
+  top: 480px;
+  left: 450px;
 }
