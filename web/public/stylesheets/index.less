@@ -23,6 +23,20 @@ h1, h2, h3, h4, h5, h6, h7 {
     &#home {
         background-color: rgb(255, 212, 0);
         height: 640px;
+
+        .row {
+            border-bottom-color: rgb(255, 233, 127);
+        }
+
+        nav > ul > li > a {
+            &:hover:not(.active) {
+                background-color: rgb(255, 233, 127);
+            }
+
+            &.active {
+                color: rgb(255, 212, 0);
+            }
+        }
     }
 
     &:nth-child(2) { height: 93000px; }
@@ -36,7 +50,7 @@ h1, h2, h3, h4, h5, h6, h7 {
         height: 700px;
 
         .row {
-            border-bottom: 1px solid rgb(139, 214, 255);
+            border-bottom-color: rgb(139, 214, 255);
         }
 
         header {
@@ -45,22 +59,20 @@ h1, h2, h3, h4, h5, h6, h7 {
             }
         }
 
-        nav {
-            ul {
-                li {
-                    a {
-                        &:hover {
-                            background-color: rgb(139, 214, 255);
-                        }
-                    }
-                }
+        nav > ul > li > a {
+            &:hover:not(.active) {
+                background-color: rgb(139, 214, 255);
+            }
+
+            &.active {
+                color: rgb(25, 174, 255);
             }
         }
     }
 
     &.home {
         .row {
-            border-bottom: 1px solid rgb(255, 233, 127);
+            border-bottom: 1px solid rgb(255, 255, 255);
             padding: 15px 45px;
 
             .col-md-6 {
@@ -93,20 +105,23 @@ h1, h2, h3, h4, h5, h6, h7 {
 
                 li {
                     display: inline-block;
-                    margin: 0px 10px;
+                    margin: 0px 0px;
 
                     a {
+                        border-radius: 20px;
                         color: rgb(0, 0, 0);
-                        padding: 10px 15px;
+                        padding: 10px 12px;
 
                         &:hover {
-                            background-color: rgb(255, 233, 127);
-                            border-radius: 20px;
                             cursor: pointer;
 
                             text-decoration: none;
                             transition: background-color .4s;
                             -webkit-transition: background-color .4s;
+                        }
+
+                        &.active {
+                            background-color: rgb(70, 70, 70);
                         }
                     }
                 }

@@ -26,6 +26,15 @@ h7 {
   background-color: #ffd400;
   height: 640px;
 }
+.page#home .row {
+  border-bottom-color: #ffe97f;
+}
+.page#home nav > ul > li > a:hover:not(.active) {
+  background-color: #ffe97f;
+}
+.page#home nav > ul > li > a.active {
+  color: #ffd400;
+}
 .page:nth-child(2) {
   height: 93000px;
 }
@@ -38,16 +47,19 @@ h7 {
   height: 700px;
 }
 .page#end .row {
-  border-bottom: 1px solid #8bd6ff;
+  border-bottom-color: #8bd6ff;
 }
 .page#end header h1 {
   background-image: url('/images/icon-colored.png');
 }
-.page#end nav ul li a:hover {
+.page#end nav > ul > li > a:hover:not(.active) {
   background-color: #8bd6ff;
 }
+.page#end nav > ul > li > a.active {
+  color: #19aeff;
+}
 .page.home .row {
-  border-bottom: 1px solid #ffe97f;
+  border-bottom: 1px solid #ffffff;
   padding: 15px 45px;
 }
 .page.home .row .col-md-6 {
@@ -72,19 +84,21 @@ h7 {
 }
 .page.home nav ul li {
   display: inline-block;
-  margin: 0px 10px;
+  margin: 0px 0px;
 }
 .page.home nav ul li a {
+  border-radius: 20px;
   color: #000000;
-  padding: 10px 15px;
+  padding: 10px 12px;
 }
 .page.home nav ul li a:hover {
-  background-color: #ffe97f;
-  border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.4s;
   -webkit-transition: background-color 0.4s;
+}
+.page.home nav ul li a.active {
+  background-color: #464646;
 }
 .scroll {
   position: fixed;
