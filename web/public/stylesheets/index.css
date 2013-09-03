@@ -59,7 +59,6 @@ h7 {
   color: #19aeff;
 }
 .page.home .row {
-  border-bottom: 1px solid #ffffff;
   padding: 15px 45px;
 }
 .page.home .row .col-md-6 {
@@ -206,4 +205,8 @@ h7 {
 .scroll.dialog#dialog-3 {
   top: 480px;
   left: 450px;
+}
+.jumbotron#donate-header {
+  margin-top: 20px;
+  padding-left: 500px;
 }
