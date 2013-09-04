@@ -125,16 +125,15 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 .scroll {
     position: fixed;
+    display: none;
 
     &#description {
-        top: 140px;
-        left: 0px;
+        display: block;
+        top: 140px; left: 0px; z-index: 2;
         width: 100%;
-        height: 400px;
-        z-index: 2;
 
         background-color: rgba(255, 255, 255, 0.5);
-        padding: 20px 0px;
+        padding: 30px 0px;
 
         header {
             h1 {
@@ -160,11 +159,10 @@ h1, h2, h3, h4, h5, h6, h7 {
     }
 
     &#start {
-        bottom: 20px;
-        left: 50%;
+        display: block;
+        bottom: 20px; left: 50%; z-index: 100;
         width: 240px;
         margin-left: -120px;
-        z-index: 100;
 
         color: rgb(102, 102, 102);
         text-align: center;
@@ -181,12 +179,27 @@ h1, h2, h3, h4, h5, h6, h7 {
     }
 
     &#developer {
+        display: block;
         top: 240px; left: 100px; z-index: 3;
+
+        img {
+            &:not(:first-child) {
+                display: none;
+            }
+        }
     }
 
     &#app {
+        display: block;
         top: 410px; left: 360px; z-index: 4;
-        img { width: 128px; }
+
+        img {
+            width: 128px;
+
+            &:not(:first-child) {
+                display: none;
+            }
+        }
     }
 
     &#cloud {
@@ -205,6 +218,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 
     &.user {
         display: none;
+
         &#user-1 { top: -100px; left: -100px; z-index: 1; }
         &#user-2 { top: 240px; left: -160px; z-index: 3; }
         &#user-3 { top: 640px; left: -100px; z-index: 3; }
