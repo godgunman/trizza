@@ -149,7 +149,6 @@ h7 {
   display: none;
 }
 .scroll#app {
-  display: block;
   top: 410px;
   left: 360px;
   z-index: 4;
@@ -183,9 +182,6 @@ h7 {
 }
 .scroll.star#star-3 {
   left: 790px;
-}
-.scroll.user {
-  display: none;
 }
 .scroll.user#user-1 {
   top: -100px;
