@@ -1,8 +1,12 @@
+var pg = require('pg');
 
-/*
- * GET users listing.
- */
+exports.subscribe = function(req, res){
+    pg.connect(process.env.DATABASE_URL, function(err, client, done) {
+        client.query('INSERT INTO users(email) VALUES($1)', req.body.email, function(err, result) {
+            done();
 
-exports.list = function(req, res){
-  res.send("respond with a resource");
+            if(err)
+                return console.error(err);
+        });
+    });
 };

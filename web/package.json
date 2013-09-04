@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "3.3.7",
     "ejs": "*",
-    "less-middleware": "*"
+    "less-middleware": "*",
+    "pg": "2.x"
   }
 }
