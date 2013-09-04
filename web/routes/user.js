@@ -7,6 +7,8 @@ exports.subscribe = function(req, res){
 
             if(err)
                 return console.error(err);
+
+            res.status(200);
         });
     });
 };
