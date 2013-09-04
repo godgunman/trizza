@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:200,400,700);
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 body {
@@ -26,9 +26,6 @@ h7 {
   background-color: #ffd400;
   height: 640px;
 }
-.page#home .row {
-  border-bottom-color: #ffe97f;
-}
 .page#home nav > ul > li > a:hover:not(.active) {
   background-color: #ffe97f;
 }
@@ -46,9 +43,6 @@ h7 {
   background-color: #19aeff;
   height: 700px;
 }
-.page#end .row {
-  border-bottom-color: #8bd6ff;
-}
 .page#end header h1 {
   background-image: url('/images/icon-colored.png');
 }
@@ -58,10 +52,10 @@ h7 {
 .page#end nav > ul > li > a.active {
   color: #19aeff;
 }
-.page.home .row {
+.page.home .row:first-child {
   padding: 15px 45px;
 }
-.page.home .row .col-md-6 {
+.page.home .row:first-child .col-md-6 {
   height: 72px;
 }
 .page.home header h1 {
@@ -102,15 +96,38 @@ h7 {
 .scroll {
   position: fixed;
 }
+.scroll#description {
+  top: 140px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 0px;
+}
+.scroll#description header h1 {
+  font-size: 20px;
+  font-weight: 200;
+}
+.scroll#description header b {
+  display: block;
+  font-size: 60px;
+  font-weight: bold;
+}
+.scroll#description section {
+  margin: 30px 0px;
+}
+.scroll#description section p {
+  font-size: 16px;
+}
 .scroll#start {
   bottom: 20px;
   left: 50%;
   width: 240px;
   margin-left: -120px;
   z-index: 100;
-  color: #ffffff;
+  color: #666666;
   text-align: center;
-  text-shadow: 0px 1px #999999;
 }
 .scroll#start h2 {
   font-size: 36px;
@@ -206,7 +223,9 @@ h7 {
   top: 480px;
   left: 450px;
 }
-.jumbotron#donate-header {
-  margin-top: 20px;
-  padding-left: 500px;
+.modal iframe {
+  border-width: 0px;
+}
+.btn {
+  border-width: 0px;
 }
