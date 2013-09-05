@@ -9,6 +9,7 @@
     "express": "3.3.7",
     "ejs": "*",
     "less-middleware": "*",
-    "pg": "2.x"
+    "pg": "2.x",
+    "mongoose": "3.5.7"
   }
 }
