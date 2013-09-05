@@ -33,7 +33,7 @@ var SubscriberModel = mongoose.model('SubscriberModel', subscriberSchema);
 exports.subscribe = function(req, res){
     console.log(req.body);
 
-    // Creating one user.
+    // Creating one subscriber.
     var obj = new SubscriberModel ({
       email: req.body.email
     });
