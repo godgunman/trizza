@@ -1,4 +1,3 @@
-var pg = require('pg');
 var mongoose = require ("mongoose"); // The reason for this demo.
 
 var uristring = 
